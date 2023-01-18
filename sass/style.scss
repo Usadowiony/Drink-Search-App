@@ -105,6 +105,10 @@ body {
 		margin: 5px 0;
 		padding: 0 5px 5px;
 		border-bottom: 1px solid #b9b9b9;
+
+		&--hide {
+			display: none;
+		}
 	}
 
 	&__li-item:last-child {
