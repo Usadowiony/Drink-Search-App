@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Sofia+Sans+Semi+Condensed&display=swap");
+
 * {
 	margin: 0;
 	padding: 0;
@@ -6,6 +8,10 @@
 
 body {
 	background-color: #f8f8f8;
+	font-family: "Sofia Sans Semi Condensed", sans-serif;
+	background-image: url(../img/background.jpg);
+	background-size: cover;
+	background-position: center;
 }
 
 .flex-conteiner {
@@ -18,6 +24,81 @@ body {
 .app-conteiner {
 	height: 750px;
 	width: 530px;
+	background-color: #fff;
 	border: 5px solid #0f0f0f;
-	box-shadow: 0 0 30px #141414bd;
+	box-shadow: 0 0 30px #141414ce;
+	color: #0f0f0f;
+}
+
+.header {
+	height: 300px;
+	padding: 10px;
+	font-family: "Kaushan Script", cursive;
+
+	//flex
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+	justify-content: center;
+
+	&__img {
+		margin-top: 15px;
+		width: 160px;
+	}
+
+	&__h1 {
+		letter-spacing: 1px;
+		margin: 25px 0 10px 0;
+	}
+
+	&__search {
+		width: 70%;
+		padding: 10px 20px 4px 20px;
+		border: none;
+		outline: none;
+		border-bottom: 2px solid black;
+		background: none;
+		font-size: 16px;
+		font-family: "Sofia Sans Semi Condensed", sans-serif;
+		text-align: center;
+	}
+}
+
+.drink-list {
+	padding: 0 20px;
+	height: 430px;
+
+	//flex
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+
+	&__h1 {
+		font-size: 18px;
+	}
+
+	&__ul {
+		width: 100%;
+		margin: 15px 0;
+		overflow-y: scroll;
+		list-style: none;
+		font-size: 18px;
+
+		//flex
+		display: flex;
+		flex-flow: column;
+		align-items: center;
+		justify-content: left;
+	}
+
+	&__li-item {
+		width: 80%;
+		margin: 5px 0;
+		padding: 0 5px 5px;
+		border-bottom: 1px solid #b9b9b9;
+	}
+
+	&__li-item:last-child {
+		border-color: #b9b9b900;
+	}
 }
