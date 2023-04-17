@@ -1,6 +1,6 @@
 <a name="readme-top"></a>
 
-# 🔍 Magic 8 Ball
+# 🔍 Drink Search
 
 <br />
   <p>
